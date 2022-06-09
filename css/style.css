@@ -1,9 +1,124 @@
-.flex-container {
-  display: flex;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.flex-titulo {
+header ul {
   display: flex;
-  background: #222222;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 25px;
+  list-style-type: none;
+  gap: 20px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+header {
+  height: 100px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.izquierda {
+  background-image: url(../img/delivery.jpg);
+  color: #fc200c;
+  height: 350px;
+  width: 490px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  margin: 35px 19px;
+  gap: 5px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.izquierda span {
+  color: #fff;
+}
+
+.derecha {
+  background-color: #fff;
+  padding: 26px 51px;
+  height: 350px;
+  width: 491px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.derecha h2 {
+  color: #fc200c;
+  font-weight: 700;
+}
+
+.derecha div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.derecha h3 {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.derecha li {
+  margin: 10px;
+  font-weight: 700;
+}
+
+.derecha div div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+footer {
+  position: absolute;
+  height: 150px;
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: 0;
+}
+footer div {
+  height: 100%;
+  margin: 20px;
+}
+footer ul {
+  margin-top: 19px;
+  height: calc(100% - 38px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+}
+footer img {
+  margin-right: 42px;
 }
